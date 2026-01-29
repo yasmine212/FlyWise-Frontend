@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlyWise</title>
+  <link rel="icon" type="image/x-icon" href="./img/logo-light.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="./img/logo-light.png" alt="FlyWise Logo" />
+        </div>
+        <ul>
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#choose-place">Destinations</a></li>
+          <li><a href="#top-destination">Appareils</a></li>
+          <li><a href="#testimonials">Avis</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <button class="btnLogin-popup">Connexion</button>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="form-box Login">
+      <h2>Connexion</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required>
+          <label>Mot de passe</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Se souvenir de moi</label>
+          <a href="#">Mot de passe oublié ?</a>
+        </div>
+        <button type="submit" class="btn popup-btn">Connexion</button>
+        <div class="login-register">
+          <p>Pas de compte ? <a href="#" class="register-link">S'inscrire</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="form-box register">
+      <h2>Inscription</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <input type="text" required>
+          <label>Nom d'utilisateur</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required>
+          <label>Mot de passe</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">J'accepte les termes et conditions</label>
+        </div>
+        <button type="submit" class="btn popup-btn">S'inscrire</button>
+        <div class="login-register">
+          <p>Déjà un compte ? <a href="#" class="login-link">Connexion</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main id="accueil">
+    <div class="slide-container swiper">
+      <div class="slide-content swiper-wrapper">
+        <div class="overlay swiper-slide">
+          <img src="./img/show-case-3.jpg" alt="FlyWise Mission Planning" />
+          <div class="img-overlay">
+            <p>Optimisez vos trajets aériens</p>
+            <h2><span>Planifiez</span> vos missions</h2>
+            <h2>avec <span>FlyWise</span></h2>
+            <div class="mission-buttons">
+              <a href="colis-form.html" class="btn btn-2 colis-btn">Colis</a>
+              <a href="passager-form.html" class="btn btn-2 passager-btn">Passager</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-content-wrapper">
+        <div class="agency-left-side">
+          <p class="heading-normal-txt">SOLUTIONS INTELLIGENTES POUR LE TRANSPORT AÉRIEN</p>
+          <h2 class="headings">BIENVENUE CHEZ <span>FLYWISE</span> — VOTRE AVENIR DANS LA GESTION DES VOLS</h2>
+          <p class="lead">FlyWise est une compagnie aérienne innovante spécialisée dans le transport de passagers et de fret. Notre système de gestion numérique permet de planifier, organiser et suivre efficacement toutes les missions aériennes.</p>
+          <p class="lead">Grâce à notre plateforme intelligente, les utilisateurs peuvent rechercher des vols, effectuer des réservations, suivre l’état des missions en temps réel, et bénéficier d’une expérience fluide et optimisée.</p>
+          <ul>
+            <li>
+              <div class="icons">
+                <i class="fa fa-plane"></i>
+                <p>Réservation de vols passagers et fret</p>
+              </div>
+            </li>
+            <li>
+              <div class="icons">
+                <i class="fa fa-calendar-check"></i>
+                <p>Planification et suivi des missions</p>
+              </div>
+            </li>
+            <li>
+              <div class="icons">
+                <i class="fa fa-database"></i>
+                <p>Plateforme connectée à une base de données intelligente</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="agency-right-side">
+          <div class="img">
+            <img src="./img/flywise-about.jpg" alt="FlyWise digital air travel platform illustration" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="choose-place">
+    <div class="container">
+      <p class="heading-normal-txt">Voyagez avec confort et sécurité</p>
+      <h2 class="headings">Destinations Populaires avec <span>FLYWISE</span></h2>
+      <div class="choose-wrapper">
+        <div class="lg-img">
+          <img src="./img/paris.jpg" alt="Paris, France" />
+          <div class="img-content">
+            <h2>Paris, France</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-plane"></i>3 vols/jour</span>
+              <span><i class="fa fa-clock"></i>2h 45min</span>
+              <span><i class="fa fa-location-dot"></i>CDG - Charles de Gaulle</span>
+            </div>
+            <div class="price-label">
+              <p>À partir de 150€</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-right-side">
+          <div class="lg-img">
+            <img src="./img/newyork.jpg" alt="New York, USA" />
+            <div class="img-content">
+              <h2>New York, USA</h2>
+              <div class="hidden-content">
+                <span><i class="fa fa-plane"></i>2 vols/jour</span>
+                <span><i class="fa fa-clock"></i>8h 30min</span>
+                <span><i class="fa fa-location-dot"></i>JFK - John F. Kennedy</span>
+              </div>
+              <div class="price-label">
+                <p>À partir de 450€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-wise-img">
+          <div class="lg-img">
+            <img src="./img/tokyo.jpg" alt="Tokyo, Japan" />
+            <div class="img-content">
+              <h2>Tokyo, Japon</h2>
+              <div class="hidden-content">
+                <span><i class="fa fa-plane"></i>1 vol/jour</span>
+                <span><i class="fa fa-clock"></i>13h 10min</span>
+                <span><i class="fa fa-location-dot"></i>NRT - Narita</span>
+              </div>
+              <div class="price-label">
+                <p>À partir de 750€</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg-img">
+            <img src="./img/rio.jpg" alt="Rio de Janeiro, Brazil" />
+            <div class="img-content">
+              <h2>Rio de Janeiro, Brésil</h2>
+              <div class="hidden-content">
+                <span><i class="fa fa-plane"></i>1 vol/2 jours</span>
+                <span><i class="fa fa-clock"></i>11h 40min</span>
+                <span><i class="fa fa-location-dot"></i>GIG - Galeão</span>
+              </div>
+              <div class="price-label">
+                <p>À partir de 620€</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg-img">
+            <img src="./img/cairo.jpg" alt="Cairo, Egypt" />
+            <div class="img-content">
+              <h2>Le Caire, Égypte</h2>
+              <div class="hidden-content">
+                <span><i class="fa fa-plane"></i>2 vols/jour</span>
+                <span><i class="fa fa-clock"></i>4h 20min</span>
+                <span><i class="fa fa-location-dot"></i>CAI - Le Caire Intl.</span>
+              </div>
+              <div class="price-label">
+                <p>À partir de 310€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="top-destination">
+    <div class="container">
+      <p>Nos Appareils</p>
+      <h2 class="headings">Notre <span>Flotte</span></h2>
+      <p>Découvrez les avions modernes que nous utilisons pour assurer sécurité, confort et performance à tous nos passagers.</p>
+      <div class="top-destination-wrapper swiper2">
+        <div class="swiper-wrapper">
+          <div class="carousel swiper-slide">
+            <img src="./img/fleet-airbus-a320.jpg" alt="Airbus A320" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-plane"></i> Airbus A320</h2>
+                <span>Capacité : 180 passagers</span>
+                <span>Vitesse : 840 km/h</span>
+                <span>Portée : 6100 km</span>
+                <a href="#"><span>Voir les vols</span><i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel swiper-slide">
+            <img src="./img/fleet-boeing737.jpg" alt="Boeing 757" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-plane"></i> Boeing 757</h2>
+                <span>Capacité : 210 passagers</span>
+                <span>Vitesse : 850 km/h</span>
+                <span>Portée : 6500 km</span>
+                <a href="#"><span>Voir les vols</span><i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel swiper-slide">
+            <img src="./img/fleet-atr72.jpg" alt="ATR 72" />
+            <div class="carousel-img-overlay">
+              <div class="img-content">
+                <h2><i class="fa fa-plane"></i> ATR 72</h2>
+                <span>Capacité : 70 passagers</span>
+                <span>Vitesse : 510 km/h</span>
+                <span>Portée : 1500 km</span>
+                <a href="#"><span>Voir les vols</span><i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials">
+    <div class="container">
+      <p class="heading-normal-txt">Avis Passagers</p>
+      <h2 class="headings">Expériences avec <span>FlyWise</span></h2>
+      <div class="testimonials-wrapper swiper4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-content">
+            <p class="lead">
+              <i class="fa-solid fa-quote-left"></i>
+              Un vol parfait de Paris à Rome ! Équipage attentionné, sièges confortables, et tout s’est déroulé à merveille.
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+            <div class="test-img">
+              <img src="./img/06.png" alt="Passager FlyWise" />
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>Emma Lefevre</p>
+              <p class="guest">Voyageuse régulière</p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-content">
+            <p class="lead">
+              <i class="fa-solid fa-quote-left"></i>
+              FlyWise m’a impressionné par sa ponctualité et la qualité du service à bord. Je recommande vivement !
+              <i class="fa-solid fa-quote-right"></i>
+            </p>
+            <div class="test-img">
+              <img src="./img/04.png" alt="Passager FlyWise" />
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p>Lucas Moreau</p>
+              <p class="guest">Avis client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="static-counter">
+    <div class="container">
+      <div class="static-wrapper">
+        <div class="static-icons">
+          <i class="fa fa-plane-departure"></i>
+          <p class="numbers" data-ceil="350">0</p>
+          <p class="txt">Vols opérés</p>
+        </div>
+        <div class="static-icons">
+          <i class="fa fa-globe"></i>
+          <p class="numbers" data-ceil="12">0</p>
+          <p class="txt">Destinations desservies</p>
+        </div>
+        <div class="static-icons">
+          <i class="fa fa-users"></i>
+          <p class="numbers" data-ceil="6200">0</p>
+          <p class="txt">Passagers transportés</p>
+        </div>
+        <div class="static-icons">
+          <i class="fa fa-calendar-alt"></i>
+          <p class="numbers" data-ceil="1">0</p>
+          <p class="txt">Année d'activité</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="ft-content">
+          <div class="icon">
+            <i class="fa fa-phone-volume"></i>
+          </div>
+          <div class="content">
+            <p class="Lead">Assistance</p>
+            <p>+216 94-434-901</p>
+          </div>
+        </div>
+        <div class="ft-content">
+          <div class="icon">
+            <i class="fa fa-envelope-open"></i>
+          </div>
+          <div class="content">
+            <p class="Lead">Service Client</p>
+            <p>support@flywise.com</p>
+          </div>
+        </div>
+        <div class="ft-content">
+          <div class="icon">
+            <i class="fa fa-map-location"></i>
+          </div>
+          <div class="content">
+            <p class="Lead">Siège Social</p>
+            <p>24 Rue de l'Aéroport, Tunis-Carthage, Tunisie</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="about">
+          <div class="img-logo">
+            <img src="img/logo-light.png" alt="FlyWise Logo" />
+          </div>
+          <p class="lead">FlyWise est votre solution moderne pour la gestion intelligente des vols et réservations aériennes.</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="links">
+          <h2>Liens Utiles</h2>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#top-destination">Appareils</a></li>
+            <li><a href="#testimonials">Avis</a></li>
+            <li><a href="#choose-place">Destinations</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <h2>Abonnement</h2>
+          <p class="lead">Inscrivez-vous à notre newsletter pour recevoir les dernières offres et actualités.</p>
+          <form action="#">
+            <input type="email" placeholder="Adresse Email" required />
+            <button type="submit" class="button">Envoyer</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <p>© 2025 FlyWise. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+</html>

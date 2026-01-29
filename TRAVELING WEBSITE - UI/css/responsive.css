@@ -1,0 +1,220 @@
+/* ===========================
+   General Responsive Styles
+   =========================== */
+
+   @media (max-width: 1024px) {
+    .container {
+      padding: 0 1rem;
+    }
+    .swiper {
+      height: 90vh;
+    }
+    .img-overlay p {
+      letter-spacing: 6px;
+    }
+    .img-overlay h2 {
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .btn {
+      display: block;
+    }
+    nav ul {
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      height: 400px;
+      background: var(--primary-color);
+      top: -600px;
+      left: 0;
+      padding: 3rem 1rem;
+      transition: all 0.5s ease-in;
+    }
+    nav ul.display {
+      top: 0;
+      transition: all 0.5s ease-in-out;
+    }
+    nav ul li a {
+      display: block;
+      margin: 15px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 0rem;
+      right: 0;
+      margin: 25px;
+    }
+    nav ul li::before {
+      top: 45px;
+      left: 10px;
+    }
+    nav ul li:hover::before {
+      width: 20%;
+    }
+    .swiper {
+      height: 80vh;
+    }
+    .img-overlay p {
+      letter-spacing: 4px;
+    }
+    .img-overlay h2 {
+      font-size: 2rem;
+      letter-spacing: 4px;
+    }
+    .btnLogin-popup {
+      width: 100px;
+      height: 40px;
+      font-size: 1rem;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Image Overlay Adjustments */
+    .img-overlay {
+      top: 40%;
+      transform: translate(-50%, -40%);
+      padding: 1rem;
+    }
+    .img-overlay p {
+      font-size: 0.6rem;
+      letter-spacing: 6px;
+    }
+    .img-overlay h2 {
+      font-size: 1.8rem;
+      letter-spacing: 4px;
+      padding: 0 0.5rem;
+    }
+  
+    /* Mission Buttons Adjustments */
+    .mission-buttons {
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .mission-btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    /* About Section */
+    .about-content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    .agency-left-side,
+    .agency-right-side {
+      width: 100%;
+    }
+    .agency-right-side {
+      margin-top: 2rem;
+    }
+    .agency-right-side .img {
+      max-width: 90%;
+    }
+    .agency-right-side .img img {
+      width: 95%;
+    }
+    .agency-right-side .img::after {
+      top: 10px;
+      left: 15px;
+      width: 90%;
+      height: 100%;
+    }
+  
+    /* Choose Section */
+    .choose-wrapper,
+    .row-wise-img {
+      grid-template-columns: 1fr;
+    }
+    .row-wise-img .lg-img {
+      width: 100%;
+      height: 300px;
+    }
+  
+    /* Static Section */
+    .static-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /* Testimonials */
+    .swiper2 {
+      height: 400px;
+    }
+    .testimonials-wrapper {
+      padding: 2rem;
+    }
+  
+    /* Footer */
+    .footer-content,
+    .footer-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .subscribe button {
+      top: 25%;
+      right: 3%;
+    }
+  
+    .headings {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* General Padding and Font Size */
+    .container {
+      padding: 0 1rem;
+    }
+    nav ul li a {
+      font-size: 0.9rem;
+    }
+  
+    /* Image Overlay */
+    .img-overlay {
+      top: 35%;
+      transform: translate(-50%, -35%);
+    }
+    .img-overlay p {
+      font-size: 0.5rem;
+      letter-spacing: 4px;
+    }
+    .img-overlay h2 {
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+      padding: 0 0.5rem;
+    }
+  
+    /* Mission Buttons */
+    .mission-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .mission-btn {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  
+    /* Form and Wrapper Adjustments */
+    .wrapper {
+      width: 90vw;
+      height: auto;
+      padding: 20px;
+    }
+    .wrapper.active {
+      height: auto;
+    }
+    .form-box {
+      padding: 20px;
+    }
+  
+    /* Footer */
+    .footer-content,
+    .footer-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
