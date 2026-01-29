@@ -1,8 +1,5 @@
 Live Demo: https://yasmine212.github.io/FlyWise-Frontend/
 
-## Screenshots
-
-
 # FlyWise 
 
 FlyWise is a full-stack airline management and flight booking system
@@ -34,3 +31,15 @@ Backend (team project):
 ## Note
 The backend code is not included in this repository as it was developed
 by other team members as part of the same project.
+## Screenshots
+### Homepage Layout
+![Homepage](Screenshots/Acceuil.png)
+
+### About Section
+![Services](Screenshots/Apropos.png)
+
+### Destinations Section
+![Destinations](Screenshots/Destinations.png)
+
+### Contact Section
+![Contact](Screenshots/Contact.png)
